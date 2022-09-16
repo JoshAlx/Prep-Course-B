@@ -33,11 +33,7 @@ function sumaArray(array){
   // Devuelve el resultado de sumar todos los elementos
   // de un arreglo de enteros dado
   // Tu código:
-  var suma = 0;
-  for(var i = 0; i<array.length; i++){
-    suma += array[i]
-  }
-  return suma;
+  return array.reduce((a,b)=> a + b);
 }
 
 function numeroDigitos(num){
